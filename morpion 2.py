@@ -29,7 +29,7 @@ for tour in range(9):
         print()
         move = input(f"Joueur {joueur_actuel}, écrit un chiffre pour placer ton symbole entre (1-9):")
         if move.isdigit() and 1 <= int(move) <= 9:
-            move = int(move) 
+            move = int(move) -1
             if tableau[move] == " ":
                 tableau[move] = joueur_actuel
                 break
